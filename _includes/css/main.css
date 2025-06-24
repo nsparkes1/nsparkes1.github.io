@@ -6876,11 +6876,11 @@ hr.star-light:after, hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #ffffff;
+    border-color: #ffffff42;
 }
 
 hr.star-light:after {
-    color: #ffffff00;
+    color: #ffffff42;
     background-color: #e6e6e600;
 }
 
