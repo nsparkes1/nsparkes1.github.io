@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #000000;
 }
 
 h1,
@@ -64,7 +64,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #000000;
-    background-color: #{{ site.color.primary }};
+    background-color: #000000;
 }
 
 hr.star-primary {
@@ -182,7 +182,7 @@ section h2 {
 
 section.success {
     color: #000000;
-    background: #{{ site.color.primary }};
+    background: #000000;
 }
 
 @media(max-width:767px) {
@@ -293,7 +293,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #000000;
-    color: #{{ site.color.primary }};
+    color: #000000;
     background: #000000;
 }
 
@@ -346,7 +346,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #{{ site.color.primary }};
+    color: #000000;
 }
 
 form .row:first-child .floating-label-form-group {
