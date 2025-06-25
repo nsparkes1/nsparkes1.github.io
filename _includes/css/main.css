@@ -34211,6 +34211,7 @@ section h2 {
 section.success {
     color: #ffffff;
     background: #000000;
+    letter-spacing: 1px
 }
 
 @media(max-width: 767px) {
