@@ -1,16 +1,16 @@
-<!-- Header -->
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="intro-text">
-         <span class="name" style="
-              padding-bottom: 10px;
-                ">NOAH SPARKES</span>
-          <span class="skills">{{ site.skills }}</span>          
-          <hr class="star-light" />
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="page-top" class="index">
+  {% include nav.html %}
+  {% include header.html %}
+  {% include portfolio_grid.html %}
+  {% include about.html %}
+
+  {% include footer.html %}
+  {% include modals.html %}
+  {% include js.html %}
+</body>
+
+</html>
