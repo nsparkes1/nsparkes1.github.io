@@ -34322,7 +34322,6 @@ section.success {
 .flex-center {
   display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
