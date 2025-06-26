@@ -1,7 +1,6 @@
 
 @font-face {
   font-family: 'Quicksand';
-  font-style: light;
   font-weight: 300;
   src: url('./light.eot'); /* IE9 Compat Modes */
   src: url('./light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
