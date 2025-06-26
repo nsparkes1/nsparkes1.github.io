@@ -34319,6 +34319,13 @@ section.success {
     transition: all .3s ease-in-out;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 500px; /* Needed for vertical centering */
+}
+
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     border: solid 2px #000000;
     color: #000000;
