@@ -34518,6 +34518,15 @@ Don't show: #ffffff;
     background-color: #000000 !important;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#cvb {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /* Fix modal mouse wheel issues */
 /* https://github.com/twbs/bootstrap/issues/16297 */
 .modal.fade.in {
