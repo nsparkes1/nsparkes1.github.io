@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        /* The Grid Container */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Gallery Item */
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+            text-decoration: none; /* Removes underline from the link */
+            color: #333;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Ensures images fill the space without stretching */
+            display: block;
+        }
+
+        /* Text Content Styling */
+        .gallery-info {
+            padding: 15px;
+        }
+
+        .project-title {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .project-meta span {
+            display: block;
+        }
+    </style>
+    <title>Project Gallery</title>
+</head>
+<body>
+
+    <div class="gallery-grid">
+
+        <a href="https://example.com/project1" class="gallery-item">
+            <img src="https://via.placeholder.com/400x300" alt="Project One" class="gallery-image">
+            <div class="gallery-info">
+                <span class="project-title">The Silent Horizon</span>
+                <div class="project-meta">
+                    <span>Year: 2024</span>
+                    <span>Director: Jane Doe</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://example.com/project2" class="gallery-item">
+            <img src="https://via.placeholder.com/400x300" alt="Project Two" class="gallery-image">
+            <div class="gallery-info">
+                <span class="project-title">Neon Echoes</span>
+                <div class="project-meta">
+                    <span>Year: 2023</span>
+                    <span>Director: John Smith</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://example.com/project3" class="gallery-item">
+            <img src="https://via.placeholder.com/400x300" alt="Project Three" class="gallery-image">
+            <div class="gallery-info">
+                <span class="project-title">Mountain Shadows</span>
+                <div class="project-meta">
+                    <span>Year: 2022</span>
+                    <span>Director: Elena Rossi</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
