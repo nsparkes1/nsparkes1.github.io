@@ -1,108 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 40px;
-        }
-
-        /* The Grid Container */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Individual Gallery Item */
-        .gallery-item {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
-            text-decoration: none; /* Removes underline from the link */
-            color: #333;
-            display: block;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover; /* Ensures images fill the space without stretching */
-            display: block;
-        }
-
-        /* Text Content Styling */
-        .gallery-info {
-            padding: 15px;
-        }
-
-        .project-title {
-            display: block;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .project-meta {
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .project-meta span {
-            display: block;
-        }
-    </style>
-    <title>Project Gallery</title>
-</head>
-<body>
-
-    <div class="gallery-grid">
-
-        <a href="https://example.com/project1" class="gallery-item">
-            <img src="https://via.placeholder.com/400x300" alt="Project One" class="gallery-image">
-            <div class="gallery-info">
-                <span class="project-title">The Silent Horizon</span>
-                <div class="project-meta">
-                    <span>Year: 2024</span>
-                    <span>Director: Jane Doe</span>
-                </div>
-            </div>
+<!-- Project Portfolio Section -->
+<section id="portfolio" style="padding: 50px 0;">
+  <div class="container">
+    <h2 class="title" style="font-size: 24px; margin-bottom: 30px;">PROJECTS</h2>
+    <hr class="star-light" style="margin-bottom: 40px;" />
+    
+    <div style="
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 30px; 
+      justify-content: flex-start;
+    ">
+      
+      <div class="gallery-item" style="width: 300px;">
+        <a href="https://link-to-project.com" target="_blank" style="text-decoration: none; color: inherit;">
+          <div style="width: 300px; height: 200px; overflow: hidden; background: #eee; margin-bottom: 15px;">
+            <img src="project1-thumbnail.jpg" alt="Project Title" style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          </div>
+          <div class="project-info">
+            <h3 style="font-size: 18px; margin: 0 0 5px 0; text-transform: uppercase;">Project Title</h3>
+            <p style="margin: 0; font-size: 14px; color: #555;">
+              <strong>Year:</strong> 2024<br>
+              <strong>Director:</strong> Jane Doe
+            </p>
+          </div>
         </a>
-
-        <a href="https://example.com/project2" class="gallery-item">
-            <img src="https://via.placeholder.com/400x300" alt="Project Two" class="gallery-image">
-            <div class="gallery-info">
-                <span class="project-title">Neon Echoes</span>
-                <div class="project-meta">
-                    <span>Year: 2023</span>
-                    <span>Director: John Smith</span>
-                </div>
-            </div>
+      </div>
+      <div class="gallery-item" style="width: 300px;">
+        <a href="https://link-to-project.com" target="_blank" style="text-decoration: none; color: inherit;">
+          <div style="width: 300px; height: 200px; overflow: hidden; background: #eee; margin-bottom: 15px;">
+            <img src="project2-thumbnail.jpg" alt="Project Title" style="width: 100%; height: 100%; object-fit: cover;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          </div>
+          <div class="project-info">
+            <h3 style="font-size: 18px; margin: 0 0 5px 0; text-transform: uppercase;">Short Film Name</h3>
+            <p style="margin: 0; font-size: 14px; color: #555;">
+              <strong>Year:</strong> 2023<br>
+              <strong>Director:</strong> John Smith
+            </p>
+          </div>
         </a>
-
-        <a href="https://example.com/project3" class="gallery-item">
-            <img src="https://via.placeholder.com/400x300" alt="Project Three" class="gallery-image">
-            <div class="gallery-info">
-                <span class="project-title">Mountain Shadows</span>
-                <div class="project-meta">
-                    <span>Year: 2022</span>
-                    <span>Director: Elena Rossi</span>
-                </div>
-            </div>
-        </a>
+      </div>
 
     </div>
-
-</body>
-</html>
+  </div>
+</section>
