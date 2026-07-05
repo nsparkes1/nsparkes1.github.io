@@ -34562,6 +34562,6 @@ video {
   .portfolio-container {
     flex-direction: column;
     align-items: center; /* Centers the items horizontally in the column */
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
 }
