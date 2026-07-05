@@ -34573,7 +34573,6 @@ video {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 /* MOBILE STYLES (Triggers on screens 768px wide and smaller) */
 @media screen and (max-width: 768px) {
   .flex-center {
