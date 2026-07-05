@@ -34549,3 +34549,18 @@ video {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+/* This is your layout for desktop and tablets */
+.portfolio-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* This triggers on screens smaller than 768px (standard mobile) */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center; /* Centers the items horizontally in the column */
+  }
+}
