@@ -34550,18 +34550,18 @@ video {
     -webkit-transform: translateZ(0);
 }
 
-/* This is your layout for desktop and tablets */
+/* LAPTOP / DESKTOP (Default state) */
 .portfolio-container {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important; /* Explicitly forces a horizontal row on laptop */
   gap: 30px;
   justify-content: center;
 }
 
-/* This triggers on screens smaller than 768px (standard mobile) */
+/* MOBILE (Only triggers on small screens) */
 @media (max-width: 768px) {
   .portfolio-container {
-    flex-direction: column;
-    align-items: center; /* Centers the items horizontally in the column */
-    flex-wrap: wrap !important;
+    flex-direction: column !important; /* Explicitly switches to a vertical stack on mobile */
+    align-items: center;
   }
 }
