@@ -34565,3 +34565,19 @@ video {
     align-items: center;
   }
 }
+
+/* LAPTOP / DESKTOP (Default layout) */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* MOBILE STYLES (Triggers on screens 768px wide and smaller) */
+@media screen and (max-width: 768px) {
+  .flex-center {
+    flex-wrap: wrap !important; /* Forces the text to drop underneath the image */
+    gap: 30px;                  /* Adds clean vertical spacing between image and text */
+  }
+}
